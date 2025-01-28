@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown to HTML</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="content">
+</div>
+<script>
+    $.getJSON('https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz?id=1', function(data) {
+        $('.content').html(data);
+    });
+</script>
+</body>
+</html>
