@@ -32,14 +32,15 @@
 <script>
     $.ajax({
         url: 'https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz',
-        method: 'GET',
+        method: 'POST',
         dataType: 'json',
-        xhrFields: {
-            withCredentials: true
+        data: {
+            uuid: localStorage.getItem('uuid')
         },
         success: function(json) {
             $('.content').html(json.content);
             $('.title').html(json.title);
+            localStorage.setItem('uuid', json.uuid)
         },
         error: function(xhr, status, error) {
             console.error('Error:', error);
