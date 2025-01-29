@@ -30,9 +30,20 @@
 </div>
 
 <script>
-    $.getJSON('https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz', function(data) {
-        $('.content').html(data.content);
-        $('.title').html(data.title);
+    $.ajax({
+        url: 'https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz',
+        method: 'GET',
+        dataType: 'json',
+        xhrFields: {
+            withCredentials: true
+        },
+        success: function(json) {
+            $('.content').html(json.content);
+            $('.title').html(json.title);
+        },
+        error: function(xhr, status, error) {
+            console.error('Error:', error);
+        }
     });
 </script>
 </body>
