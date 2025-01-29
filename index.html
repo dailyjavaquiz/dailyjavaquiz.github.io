@@ -6,7 +6,7 @@
     <title>Daily Java Quiz</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
-        .content {
+        .post {
             width: 100%;
             max-width: 100%;
             margin: 0 auto;
@@ -14,7 +14,7 @@
         }
 
         @media (min-width: 768px) {
-            .content {
+            .post {
                 width: 500px;
                 margin: 0 auto;
                 line-height: 27px;
@@ -23,11 +23,16 @@
     </style>
 </head>
 <body>
-<div class="content">
+
+<div class="post">
+    <h1 class="title"></h1>
+    <div class="content"></div>
 </div>
+
 <script>
     $.getJSON('https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz?id=1', function(data) {
-        $('.content').html(data);
+        $('.content').html(data.content);
+        $('.title').html(data.title);
     });
 </script>
 </body>
