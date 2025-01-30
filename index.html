@@ -5,47 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Java Quiz</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        .post {
-            width: 100%;
-            max-width: 100%;
-            margin: 0 auto;
-            line-height: 27px;
-        }
-
-        @media (min-width: 768px) {
-            .post {
-                width: 500px;
-                margin: 0 auto;
-                line-height: 27px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="/index.css?v=20250130">
 </head>
 <body>
 
-<div class="post">
+<div class="quiz">
     <h1 class="title"></h1>
     <div class="content"></div>
 </div>
-
-<script>
-    $.ajax({
-        url: 'https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz',
-        method: 'POST',
-        dataType: 'json',
-        data: {
-            userUuid: localStorage.getItem('userUuid')
-        },
-        success: function(json) {
-            $('.content').html(json.content);
-            $('.title').html(json.title);
-            localStorage.setItem('userUuid', json.userUuid)
-        },
-        error: function(xhr, status, error) {
-            console.error('Error:', error);
-        }
-    });
-</script>
+<script src="/index.js?v=20250130"></script>
 </body>
 </html>
