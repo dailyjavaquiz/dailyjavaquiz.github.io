@@ -1,7 +1,7 @@
 function setQuiz(json) {
     $('.content').html(json.content);
     $('.title').html(json.title);
-    $('.quizUuid').html(json.quizUuid);
+    $('.quizUuid').val(json.quizUuid);
     localStorage.setItem('userUuid', json.userUuid)
 }
 
