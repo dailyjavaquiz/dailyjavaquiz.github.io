@@ -54,7 +54,7 @@ $('.submit').on('click', function () {
         success: function(json) {
             if (json.correct === true) {
                 alert('정답입니다.')
-                getQuiz()
+                location.reload();
             } else {
                 alert('틀렸습니다.')
             }
