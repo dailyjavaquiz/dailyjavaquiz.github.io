@@ -2,6 +2,17 @@ function setQuiz(json) {
     $('.content').html(json.content);
     $('.title').html(json.title);
     $('.quizUuid').val(json.quizUuid);
+
+    if (json.isKorean === true) {
+        $('.quiz-footer .answer').attr('placeholder', '정답을 입력하세요.')
+        $('.quiz-footer .submit').text('정답 확인하기')
+        $('.quiz-footer .another').text('다른 문제보기')
+    } else {
+        $('.quiz-footer .answer').attr('placeholder', 'Enter the answer.')
+        $('.quiz-footer .submit').text('Check the answer')
+        $('.quiz-footer .another').text('Another question')
+    }
+
     localStorage.setItem('userUuid', json.userUuid)
 }
 
@@ -18,8 +29,6 @@ function getQuiz() {
         success: setQuiz
     });
 }
-
-getQuiz();
 
 let $answer = $('.answer');
 
@@ -63,5 +72,7 @@ $('.submit').on('click', function () {
                 alert('틀렸습니다.')
             }
         }
-    });
+    })
 })
+
+getQuiz()
