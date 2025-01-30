@@ -1,17 +1,23 @@
+function processFooter(json) {
+    if (json.isKorean === true) {
+        $('.quiz-footer .answer').attr('placeholder', '정답을 입력하세요.')
+        $('.quiz-footer .submit').text('정답 확인하기')
+        $('.quiz-footer .another').text('다른 문제보기')
+        $('.quiz-footer .solved').text('해결한 문제')
+    } else {
+        $('.quiz-footer .answer').attr('placeholder', 'Enter the answer.')
+        $('.quiz-footer .submit').text('Check the answer')
+        $('.quiz-footer .another').text('Another question')
+        $('.quiz-footer .solved').text('Solved question')
+    }
+}
+
 function setQuiz(json) {
     $('.content').html(json.content);
     $('.title').html(json.title);
     $('.quizUuid').val(json.quizUuid);
 
-    if (json.isKorean === true) {
-        $('.quiz-footer .answer').attr('placeholder', '정답을 입력하세요.')
-        $('.quiz-footer .submit').text('정답 확인하기')
-        $('.quiz-footer .another').text('다른 문제보기')
-    } else {
-        $('.quiz-footer .answer').attr('placeholder', 'Enter the answer.')
-        $('.quiz-footer .submit').text('Check the answer')
-        $('.quiz-footer .another').text('Another question')
-    }
+    processFooter(json);
 
     localStorage.setItem('userUuid', json.userUuid)
 }
@@ -44,6 +50,30 @@ $answer.on('input', function() {
 
 $('.another').on('click', function () {
     location.reload()
+})
+
+$('.solved').on('click', function () {
+    $.ajax({
+        url: url + '?type=solved',
+        method: 'POST',
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify({
+            userUuid: localStorage.getItem('userUuid')
+        }),
+        success: function (json) {
+            const html = json.list.map(quiz => {
+                return `<tr><td>${quiz.title_korean}</td></tr>`
+            })
+            .join('')
+
+            $('.content').html(`<table>${html}</table>`);
+            $('.title').html('');
+            $('.quizUuid').val('');
+
+            processFooter(json);
+        }
+    })
 })
 
 $('.submit').on('click', function () {
