@@ -60,6 +60,7 @@ $('.submit').on('click', function () {
         url,
         method: 'POST',
         dataType: 'json',
+        contentType: 'application/json',
         data: JSON.stringify({
             userUuid: localStorage.getItem('userUuid'),
             quizUuid: $('.quizUuid').val(),
