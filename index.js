@@ -31,33 +31,33 @@ function syncAnswer(source) {
 $answer.on('input', function() {
     syncAnswer(this);
 })
-.on('keydown', function(event) {
-    const $this = $(this)
-    const answer = $this.val()
+
+$('.submit').on('click', function () {
+    const $answer = $('.quiz-footer .answer');
+    const answer = $answer.val();
 
     if (answer === '') {
         alert('정답을 입력하세요.')
+        $answer.focus()
         return
     }
 
-    if (event.key === 'Enter') {
-        $.ajax({
-            url,
-            method: 'POST',
-            dataType: 'json',
-            data: {
-                userUuid: localStorage.getItem('userUuid'),
-                quizUuid: $('.quizUuid').val(),
-                answer: $this.val()
-            },
-            success: function(json) {
-                if (json.correct === true) {
-                    alert('정답입니다.')
-                    getQuiz()
-                } else {
-                    alert('틀렸습니다.')
-                }
+    $.ajax({
+        url,
+        method: 'POST',
+        dataType: 'json',
+        data: {
+            userUuid: localStorage.getItem('userUuid'),
+            quizUuid: $('.quizUuid').val(),
+            answer
+        },
+        success: function(json) {
+            if (json.correct === true) {
+                alert('정답입니다.')
+                getQuiz()
+            } else {
+                alert('틀렸습니다.')
             }
-        });
-    }
+        }
+    });
 })
