@@ -35,12 +35,12 @@
         method: 'POST',
         dataType: 'json',
         data: {
-            uuid: localStorage.getItem('uuid')
+            userUuid: localStorage.getItem('userUuid')
         },
         success: function(json) {
             $('.content').html(json.content);
             $('.title').html(json.title);
-            localStorage.setItem('uuid', json.uuid)
+            localStorage.setItem('userUuid', json.userUuid)
         },
         error: function(xhr, status, error) {
             console.error('Error:', error);
