@@ -23,12 +23,13 @@ function getQuiz() {
         url,
         method: 'POST',
         dataType: 'json',
-        data: {
+        contentType: 'application/json',
+        data: JSON.stringify({
             userUuid: localStorage.getItem('userUuid'),
             isEnglish: true
-        },
+        }),
         success: setQuiz
-    });
+    })
 }
 
 let $answer = $('.answer');
@@ -60,11 +61,11 @@ $('.submit').on('click', function () {
         url,
         method: 'POST',
         dataType: 'json',
-        data: {
+        data: JSON.stringify({
             userUuid: localStorage.getItem('userUuid'),
             quizUuid: $('.quizUuid').val(),
             answer
-        },
+        }),
         success: function(json) {
             if (json.correct === true) {
                 alert('정답입니다.')
