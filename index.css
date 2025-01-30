@@ -14,7 +14,7 @@
     font-size: 18px;
 }
 
-.submit {
+button {
     box-sizing: border-box;
     height: 30px;
     font-size: 18px;
@@ -26,6 +26,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 5px;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
