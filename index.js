@@ -32,6 +32,10 @@ $answer.on('input', function() {
     syncAnswer(this);
 })
 
+$('.another').on('click', function () {
+    location.reload()
+})
+
 $('.submit').on('click', function () {
     const $answer = $('.quiz-footer .answer');
     const answer = $answer.val();
@@ -54,7 +58,7 @@ $('.submit').on('click', function () {
         success: function(json) {
             if (json.correct === true) {
                 alert('정답입니다.')
-                location.reload();
+                location.reload()
             } else {
                 alert('틀렸습니다.')
             }
