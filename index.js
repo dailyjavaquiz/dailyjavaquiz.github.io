@@ -62,6 +62,9 @@ $('.solved').on('click', function () {
             userUuid: localStorage.getItem('userUuid')
         }),
         success: function (json) {
+            $('.quiz-navigator-footer').hide()
+            $('button.solved').hide()
+
             const html = json.list.map(quiz => {
                 return `<tr><td>${quiz.title}</td></tr>`
             })
