@@ -63,7 +63,7 @@ $('.solved').on('click', function () {
         }),
         success: function (json) {
             const html = json.list.map(quiz => {
-                return `<tr><td>${quiz.title_korean}</td></tr>`
+                return `<tr><td>${quiz.title}</td></tr>`
             })
             .join('')
 
