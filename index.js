@@ -33,13 +33,21 @@ function convertToLocalTime(dateString) {
 }
 
 function setQuiz(json) {
-    if (json.redirect === true) {
-        location.href = `${json.quizUuid}`
+    if (json.error === 'solved') {
+        alert('이미 해결한 문제입니다.');
+        another()
+        return
     }
 
-    $('.content').html(json.content);
-    $('.title').html(json.title);
-    $('.quizUuid').val(json.quizUuid);
+    if (json.redirect === true) {
+        location.href = `${json.quizUuid}`
+        return
+    }
+
+    $('.content').html(json.content)
+    $('.title').html(json.title)
+    $('.quizUuid').val(json.quizUuid)
+    $('.quiz').addClass('quiz-loading-complete')
 
     processFooter(json);
 
@@ -72,6 +80,11 @@ function syncAnswer(source) {
     $answer.val(value);
 }
 
+function another() {
+    const segments = location.pathname.split("/");
+    location.href = '/' + segments.slice(1, segments.length - 2).join('/')
+}
+
 function init() {
     $('body').append(`
         <div class="quiz">
@@ -97,8 +110,7 @@ function init() {
     })
 
     $('.another').on('click', function () {
-        const segments = location.pathname.split("/");
-        location.href = '/' + segments.slice(1, segments.length - 2).join('/')
+        another()
     })
 
     $('.solved').on('click', function () {
@@ -173,7 +185,7 @@ function init() {
             success: function(json) {
                 if (json.correct === true) {
                     alert('정답입니다.')
-                    location.reload()
+                    another()
                 } else {
                     alert('틀렸습니다.')
                 }
