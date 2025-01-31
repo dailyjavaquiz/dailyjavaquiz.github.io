@@ -33,6 +33,10 @@ function convertToLocalTime(dateString) {
 }
 
 function setQuiz(json) {
+    if (json.redirect === true) {
+        location.href = `${json.quizUuid}`
+    }
+
     $('.content').html(json.content);
     $('.title').html(json.title);
     $('.quizUuid').val(json.quizUuid);
@@ -45,7 +49,7 @@ function setQuiz(json) {
 const url = 'https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz';
 
 function getQuiz() {
-    const segments = window.location.pathname.split('/');
+    const segments = location.pathname.split('/');
     const quizUuid = segments.find(segment => segment.length === 36);
 
     $.ajax({
@@ -68,94 +72,6 @@ function syncAnswer(source) {
     $answer.val(value);
 }
 
-$answer.on('input', function() {
-    syncAnswer(this);
-})
-
-$('.another').on('click', function () {
-    location.reload()
-})
-
-$('.solved').on('click', function () {
-    $.ajax({
-        url: url + '?type=solved',
-        method: 'POST',
-        dataType: 'json',
-        contentType: 'application/json',
-        data: JSON.stringify({
-            userUuid: localStorage.getItem('userUuid')
-        }),
-        success: function (json) {
-            $('.quiz-submit-footer').hide()
-            $('button.solved').hide()
-
-            const html = json.list.map(quiz => {
-                const createdAt = convertToLocalTime(quiz.created_at)
-
-                return `
-                    <tr>
-                        <td>${quiz.title}</td>
-                        <td>${createdAt}</td>
-                    </tr>
-                `
-            })
-            .join('')
-
-            const tableHtml = `
-                You solved ${json.list.length} question(s).
-                <table class="solved-quiz">
-                <thead>
-                    <tr>
-                        <th class="solved-quiz-title">title</th>
-                        <th class="solved-quiz-date">date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    ${html} 
-                </tbody>
-                </table>
-            `
-
-            $('.content').html(tableHtml)
-            $('.title').hide()
-            $('.quizUuid').val('')
-
-            processFooter(json);
-        }
-    })
-})
-
-$('.submit').on('click', function () {
-    const $answer = $('.quiz-footer .answer');
-    const answer = $answer.val();
-
-    if (answer === '') {
-        alert('정답을 입력하세요.')
-        $answer.focus()
-        return
-    }
-
-    $.ajax({
-        url,
-        method: 'POST',
-        dataType: 'json',
-        contentType: 'application/json',
-        data: JSON.stringify({
-            userUuid: localStorage.getItem('userUuid'),
-            quizUuid: $('.quizUuid').val(),
-            answer
-        }),
-        success: function(json) {
-            if (json.correct === true) {
-                alert('정답입니다.')
-                location.reload()
-            } else {
-                alert('틀렸습니다.')
-            }
-        }
-    })
-})
-
 function init() {
     $('body').append(`
         <div class="quiz">
@@ -175,6 +91,95 @@ function init() {
             </div>
         </div>
     `)
+
+    $answer.on('input', function() {
+        syncAnswer(this);
+    })
+
+    $('.another').on('click', function () {
+        const segments = location.pathname.split("/");
+        location.href = '/' + segments.slice(1, segments.length - 2).join('/')
+    })
+
+    $('.solved').on('click', function () {
+        $.ajax({
+            url: url + '?type=solved',
+            method: 'POST',
+            dataType: 'json',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                userUuid: localStorage.getItem('userUuid')
+            }),
+            success: function (json) {
+                $('.quiz-submit-footer').hide()
+                $('button.solved').hide()
+
+                const html = json.list.map(quiz => {
+                    const createdAt = convertToLocalTime(quiz.created_at)
+
+                    return `
+                    <tr>
+                        <td>${quiz.title}</td>
+                        <td>${createdAt}</td>
+                    </tr>
+                `
+                })
+                    .join('')
+
+                const tableHtml = `
+                You solved ${json.list.length} question(s).
+                <table class="solved-quiz">
+                <thead>
+                    <tr>
+                        <th class="solved-quiz-title">title</th>
+                        <th class="solved-quiz-date">date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${html} 
+                </tbody>
+                </table>
+            `
+
+                $('.content').html(tableHtml)
+                $('.title').hide()
+                $('.quizUuid').val('')
+
+                processFooter(json);
+            }
+        })
+    })
+
+    $('.submit').on('click', function () {
+        const $answer = $('.quiz-footer .answer');
+        const answer = $answer.val();
+
+        if (answer === '') {
+            alert('정답을 입력하세요.')
+            $answer.focus()
+            return
+        }
+
+        $.ajax({
+            url,
+            method: 'POST',
+            dataType: 'json',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                userUuid: localStorage.getItem('userUuid'),
+                quizUuid: $('.quizUuid').val(),
+                answer
+            }),
+            success: function(json) {
+                if (json.correct === true) {
+                    alert('정답입니다.')
+                    location.reload()
+                } else {
+                    alert('틀렸습니다.')
+                }
+            }
+        })
+    })
 }
 
 init()
