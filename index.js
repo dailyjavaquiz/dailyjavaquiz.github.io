@@ -12,6 +12,24 @@ function processFooter(json) {
     }
 }
 
+function convertToLocalTime(dateString) {
+    const date = new Date(dateString);
+
+    const options = {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+    }
+
+    const localDate = date.toLocaleString('en-US', options)
+    const [month, day, year, hour, minute, second] = localDate.split(/[/, :]+/)
+    return `${year}-${month}-${day} ${hour}:${minute}:${second}`
+}
+
 function setQuiz(json) {
     $('.content').html(json.content);
     $('.title').html(json.title);
@@ -62,17 +80,39 @@ $('.solved').on('click', function () {
             userUuid: localStorage.getItem('userUuid')
         }),
         success: function (json) {
-            $('.quiz-navigator-footer').hide()
+            $('.quiz-submit-footer').hide()
             $('button.solved').hide()
 
             const html = json.list.map(quiz => {
-                return `<tr><td>${quiz.title}</td></tr>`
+                const createdAt = convertToLocalTime(quiz.created_at)
+
+                return `
+                    <tr>
+                        <td>${quiz.title}</td>
+                        <td>${createdAt}</td>
+                    </tr>
+                `
             })
             .join('')
 
-            $('.content').html(`<table>${html}</table>`);
-            $('.title').html('');
-            $('.quizUuid').val('');
+            const tableHtml = `
+                You solved ${json.list.length} question(s).
+                <table class="solved-quiz">
+                <thead>
+                    <tr>
+                        <th class="solved-quiz-title">title</th>
+                        <th class="solved-quiz-date">date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${html} 
+                </tbody>
+                </table>
+            `
+
+            $('.content').html(tableHtml)
+            $('.title').hide()
+            $('.quizUuid').val('')
 
             processFooter(json);
         }

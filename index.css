@@ -53,3 +53,22 @@ button {
         max-width: 500px;
     }
 }
+
+.solved-quiz {
+    margin-top: 5px;
+    width: 100%
+}
+
+.solved-quiz th {
+    text-align: left;
+}
+
+.solved-quiz th, td {
+    border-top: 1px solid rgb(216, 232, 236);
+}
+
+.solved-quiz-title {
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
