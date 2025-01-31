@@ -10,6 +10,8 @@ function processFooter(json) {
         $('.quiz-footer .another').text('Another question')
         $('.quiz-footer .solved').text('Solved question')
     }
+
+    $('.quiz-footer').css('display', 'flex')
 }
 
 function convertToLocalTime(dateString) {
@@ -43,13 +45,17 @@ function setQuiz(json) {
 const url = 'https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz';
 
 function getQuiz() {
+    const segments = window.location.pathname.split('/');
+    const quizUuid = segments.find(segment => segment.length === 36);
+
     $.ajax({
         url,
         method: 'POST',
         dataType: 'json',
         contentType: 'application/json',
         data: JSON.stringify({
-            userUuid: localStorage.getItem('userUuid')
+            userUuid: localStorage.getItem('userUuid'),
+            quizUuid
         }),
         success: setQuiz
     })
@@ -150,4 +156,26 @@ $('.submit').on('click', function () {
     })
 })
 
+function init() {
+    $('body').append(`
+        <div class="quiz">
+            <h1 class="title"></h1>
+            <div class="content"></div>
+            <input type="hidden" class="quizUuid">
+        </div>
+    
+        <div class="quiz-footer">
+            <div class="quiz-submit-footer">
+                <input type="text" class="answer" placeholder="" size="15">
+                <button type="button" class="submit"></button>
+            </div>
+            <div class="quiz-navigator-footer">
+                <button type="button" class="another"></button>
+                <button type="button" class="solved"></button>
+            </div>
+        </div>
+    `)
+}
+
+init()
 getQuiz()
