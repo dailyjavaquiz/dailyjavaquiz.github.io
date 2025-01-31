@@ -1,4 +1,4 @@
-const url = 'https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz-dev'
+const url = 'https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz'
 
 function isLocal() {
     return location.host === 'localhost:63342'
