@@ -161,7 +161,7 @@ function init() {
         }
 
         $.ajax({
-            url,
+            url: url + '?type=answer',
             method: 'POST',
             dataType: 'json',
             contentType: 'application/json',
