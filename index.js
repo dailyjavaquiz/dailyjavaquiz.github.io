@@ -1,3 +1,9 @@
+const url = 'https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz-dev'
+
+function isLocal() {
+    return location.host === 'localhost:63342'
+}
+
 function processFooter(json) {
     if (json.isKorean === true) {
         $('.quiz-footer .answer').attr('placeholder', '정답을 입력하세요.')
@@ -32,10 +38,83 @@ function convertToLocalTime(dateString) {
     return `${year}-${month}-${day} ${hour}:${minute}:${second}`
 }
 
+function showSolvedQuiz() {
+    $.ajax({
+        url: url + '?type=solved',
+        method: 'POST',
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify({
+            userUuid: localStorage.getItem('userUuid')
+        }),
+        success: function (json) {
+            $('.quiz-submit-footer').hide()
+            $('button.solved').hide()
+
+            const html = json.list.map(quiz => {
+                const createdAt = convertToLocalTime(quiz.created_at)
+
+                return `
+                    <tr>
+                        <td>${quiz.title}</td>
+                        <td>${createdAt}</td>
+                    </tr>
+                `
+            })
+                .join('')
+
+            const tableHtml = `
+                You solved ${json.list.length} question(s).
+                <table class="solved-quiz">
+                <thead>
+                    <tr>
+                        <th class="solved-quiz-title">title</th>
+                        <th class="solved-quiz-date">date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${html} 
+                </tbody>
+                </table>
+            `
+
+            $('.content').html(tableHtml)
+            $('.title').hide()
+            $('.quizUuid').val('')
+
+            processFooter(json);
+        }
+    })
+}
+
+function deleteSolvedQuiz() {
+    $.ajax({
+        url: url + '?type=deleteSolvedQuiz',
+        method: 'POST',
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify({
+            userUuid: localStorage.getItem('userUuid')
+        }),
+        success: another
+    });
+}
+
 function setQuiz(json) {
     if (json.error === 'solved') {
         alert('이미 해결한 문제입니다.');
         another()
+        return
+    }
+
+    if (json.error === 'empty') {
+        if(confirm('You have solved all the quizzes.\nWould you like to take the quiz again?')) {
+            deleteSolvedQuiz()
+        } else {
+            alert('Please visit again when new quizzes are updated.')
+            showSolvedQuiz()
+        }
+
         return
     }
 
@@ -53,8 +132,6 @@ function setQuiz(json) {
 
     localStorage.setItem('userUuid', json.userUuid)
 }
-
-const url = 'https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz';
 
 function getQuiz() {
     const segments = location.pathname.split('/');
@@ -81,8 +158,12 @@ function syncAnswer(source) {
 }
 
 function another() {
-    const segments = location.pathname.split("/");
-    location.href = '/' + segments.slice(1, segments.length - 2).join('/')
+    if (isLocal()) {
+        location.href = '/dailyjavaquiz.github.io'
+        return
+    }
+
+    location.href = '/'
 }
 
 function init() {
@@ -114,52 +195,7 @@ function init() {
     })
 
     $('.solved').on('click', function () {
-        $.ajax({
-            url: url + '?type=solved',
-            method: 'POST',
-            dataType: 'json',
-            contentType: 'application/json',
-            data: JSON.stringify({
-                userUuid: localStorage.getItem('userUuid')
-            }),
-            success: function (json) {
-                $('.quiz-submit-footer').hide()
-                $('button.solved').hide()
-
-                const html = json.list.map(quiz => {
-                    const createdAt = convertToLocalTime(quiz.created_at)
-
-                    return `
-                    <tr>
-                        <td>${quiz.title}</td>
-                        <td>${createdAt}</td>
-                    </tr>
-                `
-                })
-                    .join('')
-
-                const tableHtml = `
-                You solved ${json.list.length} question(s).
-                <table class="solved-quiz">
-                <thead>
-                    <tr>
-                        <th class="solved-quiz-title">title</th>
-                        <th class="solved-quiz-date">date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    ${html} 
-                </tbody>
-                </table>
-            `
-
-                $('.content').html(tableHtml)
-                $('.title').hide()
-                $('.quizUuid').val('')
-
-                processFooter(json);
-            }
-        })
+       showSolvedQuiz()
     })
 
     $('.submit').on('click', function () {
@@ -184,10 +220,10 @@ function init() {
             }),
             success: function(json) {
                 if (json.correct === true) {
-                    alert('정답입니다.')
+                    alert('Correct answer.')
                     another()
                 } else {
-                    alert('틀렸습니다.')
+                    alert('Wrong answer.')
                 }
             }
         })
