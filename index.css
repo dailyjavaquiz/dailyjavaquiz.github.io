@@ -13,10 +13,6 @@
     line-height: 27px;
 }
 
-.quiz-loading-complete {
-    border: 1px solid rgb(216, 232, 236);
-}
-
 .answer {
     height: 30px;
     font-size: 18px;

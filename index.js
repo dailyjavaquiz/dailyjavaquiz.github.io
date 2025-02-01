@@ -46,7 +46,6 @@ function showInfo() {
         success: function (json) {
             $('.quiz-submit-footer').hide()
             $('.info').hide()
-            $('button.solved').hide()
 
             const html = json.list.map(quiz => {
                 const createdAt = convertToLocalTime(quiz.created_at)
@@ -131,7 +130,6 @@ function setQuiz(json) {
     $('.content').html(json.content)
     $('.title').html(json.title)
     $('.quizUuid').val(json.quizUuid)
-    $('.quiz').addClass('quiz-loading-complete')
 
     processFooter(json);
 
