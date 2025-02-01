@@ -94,6 +94,18 @@ function deleteSolvedQuiz() {
     });
 }
 
+function getLanguage() {
+    if (isLocal()) {
+        const urlParams = new URLSearchParams(window.location.search);
+
+        if (urlParams.has('en')) {
+            return 'en-US'
+        }
+    }
+
+    return navigator.language
+}
+
 function setQuiz(json) {
     if (json.error === 'solved') {
         alert('이미 해결한 문제입니다.');
@@ -117,7 +129,7 @@ function setQuiz(json) {
         return
     }
 
-    if (navigator.language === 'ko-KR') {
+    if (getLanguage() === 'ko-KR') {
         $('.content').html(json.contentKorean)
         $('.title').html(json.titleKorean)
     } else {
