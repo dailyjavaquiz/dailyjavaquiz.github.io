@@ -1,4 +1,12 @@
+const { DateTime } = luxon;
+
 const url = 'https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz'
+
+function convertToLocalTime(dateString) {
+    return DateTime.fromISO(dateString, { zone: "utc" })
+        .setZone(Intl.DateTimeFormat().resolvedOptions().timeZone)
+        .toFormat("yyyy-MM-dd HH:mm:ss");
+}
 
 function showLoading() {
     $('#loading-screen').fadeIn();
@@ -16,27 +24,9 @@ function processFooter(json) {
     $('.quiz-footer').css('display', 'flex')
 }
 
-function convertToLocalTime(dateString) {
-    const date = new Date(dateString);
-
-    const options = {
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: false
-    }
-
-    const localDate = date.toLocaleString('en-US', options)
-    const [month, day, year, hour, minute, second] = localDate.split(/[/, :]+/)
-    return `${year}-${month}-${day} ${hour}:${minute}:${second}`
-}
-
 function showInfo() {
     $.ajax({
-        url: url + '?type=solved',
+        url: url + '?type=info',
         method: 'POST',
         dataType: 'json',
         contentType: 'application/json',
@@ -48,12 +38,12 @@ function showInfo() {
             $('.info').hide()
 
             const html = json.list.map(quiz => {
-                const createdAt = convertToLocalTime(quiz.created_at)
+                const solvedAt = convertToLocalTime(quiz.solved_at)
 
                 return `
                     <tr>
                         <td>${quiz.title}</td>
-                        <td>${createdAt}</td>
+                        <td>${solvedAt}</td>
                     </tr>
                 `
             })
@@ -195,7 +185,7 @@ function init() {
         </div>
     `)
 
-    $answer.on('input', function() {
+    $answer.on('input', function () {
         syncAnswer(this);
     })
 
@@ -204,7 +194,7 @@ function init() {
     })
 
     $('.info').on('click', function () {
-       showInfo()
+        showInfo()
     })
 
     $('.login').on('click', function () {
@@ -256,7 +246,7 @@ function init() {
                 quizUuid: $('.quizUuid').val(),
                 answer
             }),
-            success: function(json) {
+            success: function (json) {
                 if (json.correct === true) {
                     alert('Correct answer.')
                     another()
