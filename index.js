@@ -1,5 +1,13 @@
 const url = 'https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz'
 
+function showLoading() {
+    $('#loading-screen').fadeIn();
+}
+
+function hideLoading() {
+    $('#loading-screen').fadeOut();
+}
+
 function isLocal() {
     return location.host === 'localhost:63342'
 }
@@ -76,7 +84,9 @@ function showInfo() {
             $('.quizUuid').val('')
 
             processFooter(json);
-        }
+        },
+        beforeSend: showLoading,
+        complete: hideLoading
     })
 }
 
@@ -89,7 +99,9 @@ function deleteSolvedQuiz() {
         data: JSON.stringify({
             userUuid: localStorage.getItem('userUuid')
         }),
-        success: another
+        success: another,
+        beforeSend: showLoading,
+        complete: hideLoading
     });
 }
 
@@ -139,7 +151,9 @@ function getQuiz() {
             userUuid: localStorage.getItem('userUuid'),
             quizUuid
         }),
-        success: setQuiz
+        success: setQuiz,
+        beforeSend: showLoading,
+        complete: hideLoading
     })
 }
 
@@ -161,6 +175,9 @@ function another() {
 
 function init() {
     $('body').append(`
+        <div id="loading-screen" style="display: none;">
+          <div class="spinner"></div>
+        </div>
         <div class="quiz">
             <h1 class="title"></h1>
             <div class="content"></div>
@@ -215,7 +232,9 @@ function init() {
                 } else {
                     alert(json.error)
                 }
-            }
+            },
+            beforeSend: showLoading,
+            complete: hideLoading
         })
     })
 
@@ -246,7 +265,9 @@ function init() {
                 } else {
                     alert('Wrong answer.')
                 }
-            }
+            },
+            beforeSend: showLoading,
+            complete: hideLoading
         })
     })
 }
