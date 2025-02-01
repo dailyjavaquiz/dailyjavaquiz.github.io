@@ -117,8 +117,14 @@ function setQuiz(json) {
         return
     }
 
-    $('.content').html(json.content)
-    $('.title').html(json.title)
+    if (navigator.language === 'ko-KR') {
+        $('.content').html(json.contentKorean)
+        $('.title').html(json.titleKorean)
+    } else {
+        $('.content').html(json.contentEnglish)
+        $('.title').html(json.titleEnglish)
+    }
+
     $('.quizUuid').val(json.quizUuid)
 
     processFooter(json);
