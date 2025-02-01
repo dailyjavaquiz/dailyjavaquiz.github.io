@@ -244,6 +244,28 @@ function submit() {
     })
 }
 
+function initEvent() {
+    $answer.on('input', function () {
+        syncAnswer(this);
+    })
+
+    $('.another').on('click', function () {
+        another()
+    })
+
+    $('.info').on('click', function () {
+        showInfo()
+    })
+
+    $('.login').on('click', function () {
+        login()
+    })
+
+    $('.submit').on('click', function () {
+        submit()
+    })
+}
+
 function init() {
     $('body').append(`
         <div id="loading-screen" style="display: none;">
@@ -269,25 +291,7 @@ function init() {
         </div>
     `)
 
-    $answer.on('input', function () {
-        syncAnswer(this);
-    })
-
-    $('.another').on('click', function () {
-        another()
-    })
-
-    $('.info').on('click', function () {
-        showInfo()
-    })
-
-    $('.login').on('click', function () {
-        login()
-    })
-
-    $('.submit').on('click', function () {
-        submit()
-    })
+    initEvent()
 }
 
 function isIndex() {
@@ -299,6 +303,7 @@ function isIndex() {
 
 if (isIndex()) {
     processFooter()
+    initEvent()
 } else {
     init()
     getQuiz()
