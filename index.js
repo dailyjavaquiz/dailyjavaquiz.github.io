@@ -20,7 +20,7 @@ function isLocal() {
     return location.host === 'localhost:63342'
 }
 
-function processFooter(json) {
+function processFooter() {
     $('.quiz-footer').css('display', 'flex')
 }
 
@@ -166,17 +166,82 @@ function getQuiz() {
 let $answer = $('.answer');
 
 function syncAnswer(source) {
-    var value = $(source).val();
+    const value = $(source).val();
     $answer.val(value);
 }
 
 function another() {
+    const anotherPath = '/another.html';
+
     if (isLocal()) {
-        location.href = '/dailyjavaquiz.github.io'
+        location.href = `/dailyjavaquiz.github.io${anotherPath}`
+        return
+
+    }
+
+    location.href = anotherPath
+}
+
+function login() {
+    const userUuid = prompt("Please enter your token:");
+
+    if (userUuid.length !== 36) {
+        alert('Please enter a valid token.')
         return
     }
 
-    location.href = '/'
+    $.ajax({
+        url: url + '?type=login',
+        method: 'POST',
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify({
+            userUuid
+        }),
+        success: function (json) {
+            if (json.error == null) {
+                localStorage.setItem('userUuid', json.userUuid)
+                another()
+            } else {
+                alert(json.error)
+            }
+        },
+        beforeSend: showLoading,
+        complete: hideLoading
+    })
+}
+
+function submit() {
+    const $answer = $('.quiz-footer .answer');
+    const answer = $answer.val();
+
+    if (answer === '') {
+        alert('Please enter the answer.')
+        $answer.focus()
+        return
+    }
+
+    $.ajax({
+        url: url + '?type=answer',
+        method: 'POST',
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify({
+            userUuid: localStorage.getItem('userUuid'),
+            quizUuid: $('.quizUuid').val(),
+            answer
+        }),
+        success: function (json) {
+            if (json.correct === true) {
+                alert('Correct answer.')
+                another()
+            } else {
+                alert('Wrong answer.')
+            }
+        },
+        beforeSend: showLoading,
+        complete: hideLoading
+    })
 }
 
 function init() {
@@ -184,6 +249,7 @@ function init() {
         <div id="loading-screen" style="display: none;">
           <div class="spinner"></div>
         </div>
+        
         <div class="quiz">
             <h1 class="title"></h1>
             <div class="content"></div>
@@ -196,7 +262,7 @@ function init() {
                 <button type="button" class="submit">Check the answer</button>
             </div>
             <div class="quiz-navigator-footer">
-                <button type="button" class="another">Another quizzes</button>
+                <button type="button" class="another">Another quiz</button>
                 <button type="button" class="info">Info</button>
                 <button type="button" class="login">Login</button>
             </div>
@@ -216,67 +282,26 @@ function init() {
     })
 
     $('.login').on('click', function () {
-        const userUuid = prompt("Please enter your token:");
-
-        if (userUuid.length !== 36) {
-            alert('Please enter a valid token.')
-            return
-        }
-
-        $.ajax({
-            url: url + '?type=login',
-            method: 'POST',
-            dataType: 'json',
-            contentType: 'application/json',
-            data: JSON.stringify({
-                userUuid
-            }),
-            success: function (json) {
-                if (json.error == null) {
-                    localStorage.setItem('userUuid', json.userUuid)
-                    another()
-                } else {
-                    alert(json.error)
-                }
-            },
-            beforeSend: showLoading,
-            complete: hideLoading
-        })
+        login()
     })
 
     $('.submit').on('click', function () {
-        const $answer = $('.quiz-footer .answer');
-        const answer = $answer.val();
-
-        if (answer === '') {
-            alert('Please enter the answer.')
-            $answer.focus()
-            return
-        }
-
-        $.ajax({
-            url: url + '?type=answer',
-            method: 'POST',
-            dataType: 'json',
-            contentType: 'application/json',
-            data: JSON.stringify({
-                userUuid: localStorage.getItem('userUuid'),
-                quizUuid: $('.quizUuid').val(),
-                answer
-            }),
-            success: function (json) {
-                if (json.correct === true) {
-                    alert('Correct answer.')
-                    another()
-                } else {
-                    alert('Wrong answer.')
-                }
-            },
-            beforeSend: showLoading,
-            complete: hideLoading
-        })
+        submit()
     })
 }
 
-init()
-getQuiz()
+function isIndex() {
+    return location.pathname === '/'
+        || location.pathname === '/index.html'
+        || location.pathname === '/dailyjavaquiz.github.io/'
+        || location.pathname === '/dailyjavaquiz.github.io/index.html';
+}
+
+if (isIndex()) {
+    processFooter()
+} else {
+    init()
+    getQuiz()
+}
+
+
