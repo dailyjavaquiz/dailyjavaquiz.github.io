@@ -9,12 +9,14 @@ function processFooter(json) {
         $('.quiz-footer .answer').attr('placeholder', '정답을 입력하세요.')
         $('.quiz-footer .submit').text('정답 확인하기')
         $('.quiz-footer .another').text('다른 문제보기')
-        $('.quiz-footer .solved').text('해결한 문제')
+        $('.quiz-footer .solved').text('정보')
+        $('.quiz-footer .login').text('로그인')
     } else {
         $('.quiz-footer .answer').attr('placeholder', 'Enter the answer.')
         $('.quiz-footer .submit').text('Check the answer')
-        $('.quiz-footer .another').text('Another question')
-        $('.quiz-footer .solved').text('Solved question')
+        $('.quiz-footer .another').text('Another quizzes')
+        $('.quiz-footer .solved').text('Info')
+        $('.quiz-footer .login').text('Login')
     }
 
     $('.quiz-footer').css('display', 'flex')
@@ -64,7 +66,11 @@ function showSolvedQuiz() {
                 .join('')
 
             const tableHtml = `
-                You solved ${json.list.length} question(s).
+                <p>Your token is ${json.userUuid}<br>
+                You can log in on other devices with this token and continue taking the quiz.
+                Make sure to manage it carefully so that it is not exposed to others.
+                </p>
+                </p>You solved ${json.list.length} question(s).</p>
                 <table class="solved-quiz">
                 <thead>
                     <tr>
@@ -182,6 +188,7 @@ function init() {
             <div class="quiz-navigator-footer">
                 <button type="button" class="another"></button>
                 <button type="button" class="solved"></button>
+                <button type="button" class="login"></button>
             </div>
         </div>
     `)
@@ -196,6 +203,33 @@ function init() {
 
     $('.solved').on('click', function () {
        showSolvedQuiz()
+    })
+
+    $('.login').on('click', function () {
+        const userUuid = prompt("Please enter your token:");
+
+        if (userUuid.length !== 36) {
+            alert('Please enter a valid token.')
+            return
+        }
+
+        $.ajax({
+            url: url + '?type=login',
+            method: 'POST',
+            dataType: 'json',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                userUuid
+            }),
+            success: function (json) {
+                if (json.error == null) {
+                    localStorage.setItem('userUuid', json.userUuid)
+                    another()
+                } else {
+                    alert(json.error)
+                }
+            }
+        })
     })
 
     $('.submit').on('click', function () {
