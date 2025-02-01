@@ -5,20 +5,6 @@ function isLocal() {
 }
 
 function processFooter(json) {
-    if (json.isKorean === true) {
-        $('.quiz-footer .answer').attr('placeholder', '정답을 입력하세요.')
-        $('.quiz-footer .submit').text('정답 확인하기')
-        $('.quiz-footer .another').text('다른 문제보기')
-        $('.quiz-footer .solved').text('정보')
-        $('.quiz-footer .login').text('로그인')
-    } else {
-        $('.quiz-footer .answer').attr('placeholder', 'Enter the answer.')
-        $('.quiz-footer .submit').text('Check the answer')
-        $('.quiz-footer .another').text('Another quizzes')
-        $('.quiz-footer .solved').text('Info')
-        $('.quiz-footer .login').text('Login')
-    }
-
     $('.quiz-footer').css('display', 'flex')
 }
 
@@ -40,7 +26,7 @@ function convertToLocalTime(dateString) {
     return `${year}-${month}-${day} ${hour}:${minute}:${second}`
 }
 
-function showSolvedQuiz() {
+function showInfo() {
     $.ajax({
         url: url + '?type=solved',
         method: 'POST',
@@ -51,6 +37,7 @@ function showSolvedQuiz() {
         }),
         success: function (json) {
             $('.quiz-submit-footer').hide()
+            $('.info').hide()
             $('button.solved').hide()
 
             const html = json.list.map(quiz => {
@@ -118,7 +105,7 @@ function setQuiz(json) {
             deleteSolvedQuiz()
         } else {
             alert('Please visit again when new quizzes are updated.')
-            showSolvedQuiz()
+            showInfo()
         }
 
         return
@@ -182,13 +169,13 @@ function init() {
     
         <div class="quiz-footer">
             <div class="quiz-submit-footer">
-                <input type="text" class="answer" placeholder="" size="15">
-                <button type="button" class="submit"></button>
+                <input type="text" class="answer" placeholder="Enter the answer." size="15">
+                <button type="button" class="submit">Check the answer</button>
             </div>
             <div class="quiz-navigator-footer">
-                <button type="button" class="another"></button>
-                <button type="button" class="solved"></button>
-                <button type="button" class="login"></button>
+                <button type="button" class="another">Another quizzes</button>
+                <button type="button" class="info">Info</button>
+                <button type="button" class="login">Login</button>
             </div>
         </div>
     `)
@@ -201,8 +188,8 @@ function init() {
         another()
     })
 
-    $('.solved').on('click', function () {
-       showSolvedQuiz()
+    $('.info').on('click', function () {
+       showInfo()
     })
 
     $('.login').on('click', function () {
@@ -237,7 +224,7 @@ function init() {
         const answer = $answer.val();
 
         if (answer === '') {
-            alert('정답을 입력하세요.')
+            alert('Please enter the answer.')
             $answer.focus()
             return
         }
