@@ -270,6 +270,15 @@ function initEvent() {
     $('.submit').on('click', function () {
         submit()
     })
+
+    $('.home').on('click', function () {
+        if (isLocal()) {
+            location.href = '/dailyjavaquiz.github.io'
+            return
+        }
+
+        location.href = '/'
+    })
 }
 
 function init() {
@@ -291,7 +300,8 @@ function init() {
                 <button type="button" class="submit">Check the answer</button>
             </div>            
             <div class="quiz-navigator-footer">
-                <button type="button" class="another">Another quizzes</button>
+                <button type="button" class="home">home</button>
+                <button type="button" class="another">Another quiz</button>
                 <button type="button" class="info">Info</button>
                 <button type="button" class="login">Login</button>
             </div>
