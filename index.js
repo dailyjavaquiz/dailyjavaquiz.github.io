@@ -37,6 +37,8 @@ function showInfo() {
             $('.quiz-submit-footer').hide()
             $('.info').hide()
 
+            localStorage.setItem('userUuid', json.userUuid)
+
             const html = json.list.map(quiz => {
                 const solvedAt = convertToLocalTime(quiz.solved_at)
 
@@ -151,6 +153,8 @@ function setQuiz(json) {
     $('.quizUuid').val(json.quizUuid)
 
     processFooter(json);
+
+    console.log('>>> json', json)
 
     localStorage.setItem('userUuid', json.userUuid)
 }
