@@ -76,6 +76,7 @@ function showInfo() {
 
             $('.content').html(tableHtml)
             $('.title').hide()
+            $('.home').show()
             $('.quizUuid').val('')
 
             processFooter(json);
@@ -321,6 +322,7 @@ function isIndex() {
 }
 
 if (isIndex()) {
+    $('.home').hide()
     processFooter()
     initEvent()
 } else {
