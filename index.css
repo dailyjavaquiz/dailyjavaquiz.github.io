@@ -18,10 +18,13 @@
     font-size: 18px;
 }
 
+.quiz-footer .answer {
+    margin: 0 5px 0 0;
+}
+
 button {
     height: 30px;
     font-size: 18px;
-    margin: 0 0 0 5px;
 }
 
 .quiz-footer {
