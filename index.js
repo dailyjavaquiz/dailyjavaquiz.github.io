@@ -169,11 +169,9 @@ function getQuiz() {
     })
 }
 
-let $answer = $('.answer');
-
 function syncAnswer(source) {
     const value = $(source).val();
-    $answer.val(value);
+    $('.answer').val(value);
 }
 
 function another() {
@@ -251,8 +249,12 @@ function submit() {
 }
 
 function initEvent() {
-    $answer.on('input', function () {
-        syncAnswer(this);
+    $('.answer').on('input', function () {
+        syncAnswer(this)
+    })
+
+    $('body').on('click', '.answer[readonly]', function () {
+        $('.quiz-footer .answer').focus()
     })
 
     $('.another').on('click', function () {
@@ -296,14 +298,14 @@ function init() {
         <div class="quiz-footer">
             <div class="quiz-submit-footer">
                 <div>Please enter an English word.</div>
-                <input type="text" class="answer" placeholder="Enter the answer." size="15">
-                <button type="button" class="submit">Check the answer</button>
+                <input type="text" class="answer" placeholder="Enter the answer." size="17">
+                <button type="button" class="submit">send</button>
             </div>            
             <div class="quiz-navigator-footer">
-                <button type="button" class="home">home</button>
-                <button type="button" class="another">Another quiz</button>
-                <button type="button" class="info">Info</button>
-                <button type="button" class="login">Login</button>
+                <button type="button" class="home link-button">home</button>
+                <button type="button" class="another link-button">Another quiz</button>
+                <button type="button" class="info link-button">Info</button>
+                <button type="button" class="login link-button">Login</button>
             </div>
         </div>
     `)

@@ -97,3 +97,10 @@ button {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+.link-button {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
