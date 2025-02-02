@@ -302,7 +302,7 @@ function init() {
                 <button type="button" class="submit">send</button>
             </div>            
             <div class="quiz-navigator-footer">
-                <button type="button" class="link-button home">home</button>
+                <button type="button" class="link-button home">Home</button>
                 <button type="button" class="link-button another">Another quiz</button>
                 <button type="button" class="link-button info">Info</button>
                 <button type="button" class="link-button login">Login</button>
