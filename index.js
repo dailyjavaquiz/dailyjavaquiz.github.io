@@ -49,12 +49,18 @@ function showInfo() {
             })
                 .join('')
 
+            let quizTitle = 'quiz'
+
+            if (json.list.length > 1) {
+                quizTitle = 'quizzes'
+            }
+
             const tableHtml = `
                 <p>Your token is ${json.userUuid}<br>
                 You can log in on other devices with this token and continue taking the quiz.
                 Make sure to manage it carefully so that it is not exposed to others.
                 </p>
-                </p>You solved ${json.list.length} question(s).</p>
+                </p>You solved ${json.list.length} ${quizTitle}.</p>
                 <table class="solved-quiz">
                 <thead>
                     <tr>
@@ -280,11 +286,12 @@ function init() {
     
         <div class="quiz-footer">
             <div class="quiz-submit-footer">
+                <div>Please enter an English word.</div>
                 <input type="text" class="answer" placeholder="Enter the answer." size="15">
                 <button type="button" class="submit">Check the answer</button>
-            </div>
+            </div>            
             <div class="quiz-navigator-footer">
-                <button type="button" class="another">Another quiz</button>
+                <button type="button" class="another">Another quizzes</button>
                 <button type="button" class="info">Info</button>
                 <button type="button" class="login">Login</button>
             </div>
