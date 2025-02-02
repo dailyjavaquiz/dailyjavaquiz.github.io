@@ -113,6 +113,10 @@ function getLanguage() {
     return navigator.language
 }
 
+function isKorean() {
+    return getLanguage() === 'ko-KR';
+}
+
 function setQuiz(json) {
     if (json.error === 'solved') {
         alert('이미 해결한 문제입니다.');
@@ -136,7 +140,7 @@ function setQuiz(json) {
         return
     }
 
-    if (getLanguage() === 'ko-KR') {
+    if (isKorean()) {
         $('.content').html(json.contentKorean)
         $('.title').html(json.titleKorean)
     } else {
@@ -298,7 +302,7 @@ function init() {
     
         <div class="quiz-footer">
             <div class="quiz-submit-footer">
-                <div>Please enter an English word.</div>
+                <div class="info-message">Please enter an English word.</div>
                 <input type="text" class="answer" placeholder="Enter the answer." size="17">
                 <button type="button" class="submit">send</button>
             </div>            
@@ -330,4 +334,8 @@ if (isIndex()) {
     getQuiz()
 }
 
-
+if (isKorean()) {
+    $('.info-message').show()
+} else {
+    $('.info-message').hide()
+}
