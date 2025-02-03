@@ -138,6 +138,7 @@ function setQuiz(json) {
         alert('Please visit again when new quizzes are updated.')
         home()
     } else if (json.error === 'nonexistent quiz') {
+        alert('This quiz does not exist.')
         home()
     }
 
