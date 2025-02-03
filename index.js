@@ -1,4 +1,5 @@
 const { DateTime } = luxon;
+const localPath = 'dailyjavaquiz.github.io'
 
 const url = 'https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz'
 
@@ -42,10 +43,18 @@ function showInfo() {
             const html = json.list.map(quiz => {
                 const solvedAt = convertToLocalTime(quiz.solved_at)
 
+                let path = '/'
+
+                if (isLocal()) {
+                    path += `${localPath}/`
+                }
+
+                path += quiz.uuid
+
                 return `
                     <tr>
-                        <td>${quiz.title}</td>
-                        <td>${solvedAt}</td>
+                        <td><a href="${path}">${quiz.title}</a></td>
+                        <td>${solvedAt}</td">
                     </tr>
                 `
             })
@@ -120,21 +129,16 @@ function isKorean() {
 }
 
 function setQuiz(json) {
-    if (json.error === 'solved') {
-        alert('이미 해결한 문제입니다.');
-        another()
-        return
-    }
-
     if (json.error === 'empty') {
         if(confirm('You have solved all the quizzes.\nWould you like to take the quiz again?')) {
             deleteSolvedQuiz()
-        } else {
-            alert('Please visit again when new quizzes are updated.')
-            showInfo()
+            return
         }
 
-        return
+        alert('Please visit again when new quizzes are updated.')
+        home()
+    } else if (json.error === 'nonexistent quiz') {
+        home()
     }
 
     if (json.redirect === true) {
@@ -153,8 +157,6 @@ function setQuiz(json) {
     $('.quizUuid').val(json.quizUuid)
 
     processFooter(json);
-
-    console.log('>>> json', json)
 
     localStorage.setItem('userUuid', json.userUuid)
 }
@@ -187,7 +189,7 @@ function another() {
     const anotherPath = '/another.html';
 
     if (isLocal()) {
-        location.href = `/dailyjavaquiz.github.io${anotherPath}`
+        location.href = `/${localPath}${anotherPath}`
         return
 
     }
@@ -257,6 +259,15 @@ function submit() {
     })
 }
 
+function home() {
+    if (isLocal()) {
+        location.href = `/${localPath}`
+        return
+    }
+
+    location.href = '/'
+}
+
 function initEvent() {
     $('.answer').on('input', function () {
         syncAnswer(this)
@@ -283,12 +294,7 @@ function initEvent() {
     })
 
     $('.home').on('click', function () {
-        if (isLocal()) {
-            location.href = '/dailyjavaquiz.github.io'
-            return
-        }
-
-        location.href = '/'
+        home()
     })
 }
 
@@ -325,8 +331,8 @@ function init() {
 function isIndex() {
     return location.pathname === '/'
         || location.pathname === '/index.html'
-        || location.pathname === '/dailyjavaquiz.github.io/'
-        || location.pathname === '/dailyjavaquiz.github.io/index.html';
+        || location.pathname === `/${localPath}/`
+        || location.pathname === `/${localPath}/index.html`;
 }
 
 if (isIndex()) {
