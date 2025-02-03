@@ -38,7 +38,9 @@ function showInfo() {
             $('.quiz-submit-footer').hide()
             $('.info').hide()
 
-            localStorage.setItem('userUuid', json.userUuid)
+            if (json.userUuid !== undefined) {
+                localStorage.setItem('userUuid', json.userUuid)
+            }
 
             const html = json.list.map(quiz => {
                 const solvedAt = convertToLocalTime(quiz.solved_at)
@@ -159,7 +161,9 @@ function setQuiz(json) {
 
     processFooter(json);
 
-    localStorage.setItem('userUuid', json.userUuid)
+    if (json.userUuid !== undefined) {
+        localStorage.setItem('userUuid', json.userUuid)
+    }
 }
 
 function getQuiz() {
@@ -216,7 +220,9 @@ function login() {
         }),
         success: function (json) {
             if (json.error == null) {
-                localStorage.setItem('userUuid', json.userUuid)
+                if (json.userUuid !== undefined) {
+                    localStorage.setItem('userUuid', json.userUuid)
+                }
                 another()
             } else {
                 alert(json.error)
