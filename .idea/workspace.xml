@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be31c322-6965-48cd-ac15-e0e07eaebd89" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/fdd77bb6-d9bf-4f3e-865c-05b201393c14/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,15 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1738068979921</updated>
       <workItem from="1738068981286" duration="7579000" />
-      <workItem from="1738151617206" duration="109879000" />
-    </task>
-    <task id="LOCAL-00047" summary="resolve all">
-      <option name="closed" value="true" />
-      <created>1738366902629</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1738366902629</updated>
+      <workItem from="1738151617206" duration="119092000" />
     </task>
     <task id="LOCAL-00048" summary="login">
       <option name="closed" value="true" />
@@ -521,15 +513,53 @@
       <option name="project" value="LOCAL" />
       <updated>1738497280908</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="jgit">
+      <option name="closed" value="true" />
+      <created>1738499746829</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1738499746829</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="40ff7715-fd21-4c32-b214-e66b762c52cd" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="40ff7715-fd21-4c32-b214-e66b762c52cd">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -539,7 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="enum" />
     <MESSAGE value="module-info.java" />
     <MESSAGE value="quizzes" />
     <MESSAGE value="home" />
@@ -564,7 +593,8 @@
     <MESSAGE value="Socket" />
     <MESSAGE value="TDD" />
     <MESSAGE value="UTC" />
-    <option name="LAST_COMMIT_MESSAGE" value="UTC" />
+    <MESSAGE value="jgit" />
+    <option name="LAST_COMMIT_MESSAGE" value="jgit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
