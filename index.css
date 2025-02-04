@@ -7,7 +7,7 @@
 .quiz {
     width: 100%;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     padding: 10px 10px 100px 10px;
     font-size: 18px;
     line-height: 27px;
@@ -111,7 +111,24 @@ button {
 }
 
 .logo {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
     background-color: rgb(216, 232, 236);
-    padding: 3px;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 500px;
+        max-width: 500px;
+    }
 }

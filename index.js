@@ -181,7 +181,11 @@ function getQuiz() {
         }),
         success: setQuiz,
         beforeSend: showLoading,
-        complete: hideLoading
+        complete: function () {
+            hideLoading()
+            const content = $('content').html()
+            sessionStorage.setItem("content", content);
+        }
     })
 }
 
@@ -310,27 +314,29 @@ function init() {
         <div id="loading-screen" style="display: none;">
           <div class="spinner"></div>
         </div>
+        <div class="logo">Daily Java-Backend Quiz</div>
         
-        <div class="quiz">
-            <div class="logo">Daily Java-Backend Quiz</div>
-            <h1 class="title"></h1>
-            <div class="content"></div>
-            <input type="hidden" class="quizUuid">
-        </div>
-    
-        <div class="quiz-footer">
-            <div class="quiz-submit-footer">
-                <div class="info-message">Please enter an English word.</div>
-                <input type="text" class="answer" placeholder="Enter the answer." size="17">
-                <button type="button" class="submit">send</button>
-            </div>            
-            <div class="quiz-navigator-footer">
-                <button type="button" class="link-button home">Home</button>
-                <button type="button" class="link-button another">Another quiz</button>
-                <button type="button" class="link-button info">Info</button>
-                <button type="button" class="link-button login">Login</button>
+        <div class="quiz-content">
+            <div class="quiz">
+                <h1 class="title"></h1>
+                <div class="content"></div>
+                <input type="hidden" class="quizUuid">
             </div>
-        </div>
+        
+            <div class="quiz-footer">
+                <div class="quiz-submit-footer">
+                    <div class="info-message">Please enter an English word.</div>
+                    <input type="text" class="answer" placeholder="Enter the answer." size="17">
+                    <button type="button" class="submit">send</button>
+                </div>            
+                <div class="quiz-navigator-footer">
+                    <button type="button" class="link-button home">Home</button>
+                    <button type="button" class="link-button another">Another quiz</button>
+                    <button type="button" class="link-button info">Info</button>
+                    <button type="button" class="link-button login">Login</button>
+                </div>
+            </div>
+        </div>    
     `)
 
     initEvent()
@@ -343,17 +349,42 @@ function isIndex() {
         || location.pathname === `/${localPath}/index.html`;
 }
 
-if (isIndex()) {
-    $('.home').hide()
-    processFooter()
-    initEvent()
-} else {
-    init()
-    getQuiz()
+window.addEventListener("pageshow", function(event) {
+    if (event.persisted) {
+        restoreAjaxContent()
+    } else {
+        loadAjaxContent()
+    }
+});
+
+window.addEventListener("popstate", function() {
+    restoreAjaxContent();
+});
+
+function loadAjaxContent() {
+    if (isIndex()) {
+        $('.home').hide()
+        processFooter()
+        initEvent()
+    } else {
+        init()
+        getQuiz()
+    }
+
+    if (isKorean()) {
+        $('.info-message').show()
+    } else {
+        $('.info-message').hide()
+    }
 }
 
-if (isKorean()) {
-    $('.info-message').show()
-} else {
-    $('.info-message').hide()
+function restoreAjaxContent() {
+    let storedData = sessionStorage.getItem("quiz-content");
+
+    if (storedData) {
+        $(".quiz-content").html(storedData)
+    } else {
+        loadAjaxContent()
+    }
 }
+
