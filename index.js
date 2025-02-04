@@ -270,6 +270,23 @@ function submit() {
     })
 }
 
+function hint() {
+    $.ajax({
+        url: url + '?type=hint',
+        method: 'POST',
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify({
+            quizUuid: $('.quizUuid').val()
+        }),
+        success: function (json) {
+            alert(json)
+        },
+        beforeSend: showLoading,
+        complete: hideLoading
+    })
+}
+
 function home() {
     if (isLocal()) {
         location.href = `/${localPath}`
@@ -307,6 +324,10 @@ function initEvent() {
     $('.home').on('click', function () {
         home()
     })
+
+    $('.hint').on('click', function () {
+        hint()
+    })
 }
 
 function init() {
@@ -328,6 +349,7 @@ function init() {
                     <div class="info-message">Please enter an English word.</div>
                     <input type="text" class="answer" placeholder="Enter the answer." size="17">
                     <button type="button" class="submit">send</button>
+                    <button type="button" class="hint">hint</button>
                 </div>            
                 <div class="quiz-navigator-footer">
                     <button type="button" class="link-button home">Home</button>
