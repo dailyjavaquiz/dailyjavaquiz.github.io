@@ -207,7 +207,7 @@ function another() {
 }
 
 function login() {
-    const userUuid = prompt("Please enter your token:");
+    const userUuid = prompt("Please enter the token found on the Info page.");
 
     if (userUuid.length !== 36) {
         alert('Please enter a valid token.')
