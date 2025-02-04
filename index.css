@@ -109,3 +109,9 @@ button {
     padding-inline-end: 4px;
     padding-inline-start: 4px;
 }
+
+.logo {
+    width: 100%;
+    background-color: rgb(216, 232, 236);
+    padding: 3px;
+}

@@ -312,6 +312,7 @@ function init() {
         </div>
         
         <div class="quiz">
+            <div class="logo">Daily Java-Backend Quiz</div>
             <h1 class="title"></h1>
             <div class="content"></div>
             <input type="hidden" class="quizUuid">
