@@ -1,7 +1,8 @@
 const { DateTime } = luxon;
 const localPath = 'dailyjavaquiz.github.io'
+let nextQuizUuid;
 
-const url = 'https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz'
+const url = 'https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz-dev'
 
 function convertToLocalTime(dateString) {
     return DateTime.fromISO(dateString, { zone: "utc" })
@@ -101,14 +102,16 @@ function showInfo() {
 
 function deleteSolvedQuiz() {
     $.ajax({
-        url: url + '?type=deleteSolvedQuiz',
+        url: url + '?type=restart',
         method: 'POST',
         dataType: 'json',
         contentType: 'application/json',
         data: JSON.stringify({
             userUuid: localStorage.getItem('userUuid')
         }),
-        success: another,
+        success: function () {
+            getNextUnsolvedQuiz()
+        },
         beforeSend: showLoading,
         complete: hideLoading
     });
@@ -130,48 +133,35 @@ function isKorean() {
     return getLanguage() === 'ko-KR';
 }
 
+
 function setQuiz(json) {
-    if (json.error === 'empty') {
-        if(confirm('You have solved all the quizzes.\nWould you like to take the quiz again?')) {
-            deleteSolvedQuiz()
-            return
+    nextQuizUuid = json.nextQuizUuid
+
+    if (checkNextQuiz()) {
+        if (isKorean()) {
+            $('.content').html(json.contentKorean)
+            $('.title').html(json.titleKorean)
+        } else {
+            $('.content').html(json.contentEnglish)
+            $('.title').html(json.titleEnglish)
         }
 
-        alert('Please visit again when new quizzes are updated.')
-        home()
-    } else if (json.error === 'nonexistent quiz') {
-        alert('This quiz does not exist.')
-        home()
-    }
+        $('.quizUuid').val(json.quizUuid)
 
-    if (json.redirect === true) {
-        location.href = `${json.quizUuid}`
-        return
-    }
+        processFooter(json);
 
-    if (isKorean()) {
-        $('.content').html(json.contentKorean)
-        $('.title').html(json.titleKorean)
-    } else {
-        $('.content').html(json.contentEnglish)
-        $('.title').html(json.titleEnglish)
-    }
-
-    $('.quizUuid').val(json.quizUuid)
-
-    processFooter(json);
-
-    if (json.userUuid !== undefined) {
-        localStorage.setItem('userUuid', json.userUuid)
+        if (json.userUuid !== undefined) {
+            localStorage.setItem('userUuid', json.userUuid)
+        }
     }
 }
 
-function getQuiz() {
+function getUnsolvedQuiz() {
     const segments = location.pathname.split('/');
     const quizUuid = segments.find(segment => segment.length === 36);
 
     $.ajax({
-        url,
+        url: url + '?type=getUnsolvedQuiz',
         method: 'POST',
         dataType: 'json',
         contentType: 'application/json',
@@ -189,25 +179,62 @@ function getQuiz() {
     })
 }
 
+function getNextUnsolvedQuiz() {
+    $.ajax({
+        async: false,
+        url: url + '?type=getNextUnsolvedQuiz',
+        method: 'POST',
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify({
+            userUuid: localStorage.getItem('userUuid')
+        }),
+        beforeSend: function () {
+            $('.quiz-footer').hide()
+        },
+        success: function (reqJson) {
+            nextQuizUuid = reqJson.quizUuid
+        },
+        complete: function () {
+            $('.quiz-footer').show()
+        }
+    })
+}
+
 function syncAnswer(source) {
     const value = $(source).val();
     $('.answer').val(value);
 }
 
-function another() {
-    const anotherPath = '/another.html';
+function checkNextQuiz() {
+    if (nextQuizUuid === 'empty') {
+        if (confirm('You have solved all the quizzes.\nDo you want to delete all quiz progress and take the quiz again?')) {
+            deleteSolvedQuiz()
+            home()
+            return false
+        }
 
-    if (isLocal()) {
-        location.href = `/${localPath}${anotherPath}`
-        return
+        alert('Please visit again when new quizzes are updated.')
+        home()
 
+        return false
     }
 
-    location.href = anotherPath
+    return true
+}
+
+function another() {
+    if (checkNextQuiz()) {
+        if (isLocal()) {
+            location.href = `/${localPath}/${nextQuizUuid}`
+        } else {
+            location.href = `/${nextQuizUuid}`
+        }
+    }
 }
 
 function login() {
-    const userUuid = prompt("Please enter the token found on the Info page.");
+    const userUuid = prompt("Please enter the token found on the My page.");
 
     if (userUuid.length !== 36) {
         alert('Please enter a valid token.')
@@ -260,6 +287,7 @@ function submit() {
         success: function (json) {
             if (json.correct === true) {
                 alert('Correct answer.')
+                nextQuizUuid = json.nextQuizUuid
                 another()
             } else {
                 alert('Wrong answer.')
@@ -354,7 +382,7 @@ function init() {
                 <div class="quiz-navigator-footer">
                     <button type="button" class="link-button home">Home</button>
                     <button type="button" class="link-button another">Another quiz</button>
-                    <button type="button" class="link-button info">Info</button>
+                    <button type="button" class="link-button info">My</button>
                     <button type="button" class="link-button login">Login</button>
                 </div>
             </div>
@@ -388,9 +416,27 @@ function loadAjaxContent() {
         $('.home').hide()
         processFooter()
         initEvent()
+
+        let userUuid = localStorage.getItem('userUuid')
+
+        if (userUuid == null) {
+            $.ajax({
+                url: url + '?type=home',
+                method: 'POST',
+                dataType: 'json',
+                contentType: 'application/json',
+                data: JSON.stringify({}),
+                success: function (json) {
+                    userUuid = json.userUuid
+                    localStorage.setItem('userUuid', userUuid)
+                },
+            })
+        }
+
+        getNextUnsolvedQuiz()
     } else {
         init()
-        getQuiz()
+        getUnsolvedQuiz()
     }
 
     if (isKorean()) {
