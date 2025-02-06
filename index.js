@@ -2,7 +2,7 @@ const { DateTime } = luxon;
 const localPath = 'dailyjavaquiz.github.io'
 let nextQuizUuid;
 
-const url = 'https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz-dev'
+const url = 'https://cuiqqdgejvevjamtmiog.supabase.co/functions/v1/daily-java-quiz'
 
 function convertToLocalTime(dateString) {
     return DateTime.fromISO(dateString, { zone: "utc" })
