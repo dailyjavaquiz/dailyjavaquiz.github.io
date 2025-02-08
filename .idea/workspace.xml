@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be31c322-6965-48cd-ac15-e0e07eaebd89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/50a65a5b-bef1-4075-b979-6cd1a05c53b5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/50a65a5b-bef1-4075-b979-6cd1a05c53b5/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/926f3bfc-27dd-4eb4-8f2b-b4abe4b1b8a7/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/926f3bfc-27dd-4eb4-8f2b-b4abe4b1b8a7/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,14 +139,6 @@
       <workItem from="1738068981286" duration="7579000" />
       <workItem from="1738151617206" duration="149666000" />
       <workItem from="1738702680108" duration="4622000" />
-    </task>
-    <task id="LOCAL-00055" summary="loading">
-      <option name="closed" value="true" />
-      <created>1738378703800</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1738378703800</updated>
     </task>
     <task id="LOCAL-00056" summary="loading">
       <option name="closed" value="true" />
@@ -531,7 +524,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739013928703</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="robots.txt">
+      <option name="closed" value="true" />
+      <created>1739015928139</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1739015928140</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +580,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="synchronized" />
     <MESSAGE value="Deque" />
     <MESSAGE value="prepared statement" />
     <MESSAGE value="spring boot" />
@@ -604,7 +604,8 @@
     <MESSAGE value="back forward" />
     <MESSAGE value="AES" />
     <MESSAGE value="Java8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java8" />
+    <MESSAGE value="robots.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="robots.txt" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
