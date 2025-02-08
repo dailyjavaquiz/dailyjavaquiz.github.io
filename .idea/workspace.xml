@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be31c322-6965-48cd-ac15-e0e07eaebd89" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/8e642eed-3c71-4054-b758-45a3f03791f3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/8e642eed-3c71-4054-b758-45a3f03791f3/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8a64921b-fce8-42f5-a66d-892e8791c35d/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/8a64921b-fce8-42f5-a66d-892e8791c35d/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,14 +139,6 @@
       <workItem from="1738068981286" duration="7579000" />
       <workItem from="1738151617206" duration="149666000" />
       <workItem from="1738702680108" duration="4622000" />
-    </task>
-    <task id="LOCAL-00053" summary="Mybatis">
-      <option name="closed" value="true" />
-      <created>1738376582152</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1738376582152</updated>
     </task>
     <task id="LOCAL-00054" summary="BiFunction">
       <option name="closed" value="true" />
@@ -531,7 +524,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738844225568</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="AES">
+      <option name="closed" value="true" />
+      <created>1739013118740</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1739013118740</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +580,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CompletableFuture" />
     <MESSAGE value="ui" />
     <MESSAGE value="synchronized" />
     <MESSAGE value="Deque" />
@@ -604,7 +604,8 @@
     <MESSAGE value="favicon" />
     <MESSAGE value="backend" />
     <MESSAGE value="back forward" />
-    <option name="LAST_COMMIT_MESSAGE" value="back forward" />
+    <MESSAGE value="AES" />
+    <option name="LAST_COMMIT_MESSAGE" value="AES" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
