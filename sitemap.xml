@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://dailyjavaquiz.github.io</loc>
-        <lastmod>2025-02-08</lastmod>
+        <lastmod>2025-02-09</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io"/>
@@ -1014,6 +1014,15 @@
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/e52a2b0c-d3c6-4862-a526-e6d449ace64b"/>
         <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/e52a2b0c-d3c6-4862-a526-e6d449ace64b"/>
+    </url>
+
+    <url>
+        <loc>https://dailyjavaquiz.github.io/1323bbdf-4814-42bb-b42f-7e4095204128</loc>
+        <lastmod>2025-02-09</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/1323bbdf-4814-42bb-b42f-7e4095204128"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/1323bbdf-4814-42bb-b42f-7e4095204128"/>
     </url>
 
     <url>
