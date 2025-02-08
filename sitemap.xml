@@ -1,912 +1,1172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://dailyjavaquiz.github.io</loc>
         <lastmod>2025-02-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io"/>
     </url>
-    <url>
+        <url>
         <loc>https://dailyjavaquiz.github.io/b0ce4130-0a9f-471d-bf1f-c3d7555cc595</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/b0ce4130-0a9f-471d-bf1f-c3d7555cc595"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/b0ce4130-0a9f-471d-bf1f-c3d7555cc595"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/32989410-aa17-42d6-be82-4d56b68290f9</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/32989410-aa17-42d6-be82-4d56b68290f9"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/32989410-aa17-42d6-be82-4d56b68290f9"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/aa15dd82-a1d4-4ec2-bdd4-9dbf42343196</loc>
         <lastmod>2025-02-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/aa15dd82-a1d4-4ec2-bdd4-9dbf42343196"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/aa15dd82-a1d4-4ec2-bdd4-9dbf42343196"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/ca0b3785-9673-40da-930c-ea7161eec41f</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/ca0b3785-9673-40da-930c-ea7161eec41f"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/ca0b3785-9673-40da-930c-ea7161eec41f"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/d720af9c-9438-47d4-b35c-5ae45a21f274</loc>
         <lastmod>2025-02-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/d720af9c-9438-47d4-b35c-5ae45a21f274"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/d720af9c-9438-47d4-b35c-5ae45a21f274"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/b99b3996-25a3-42e5-ac87-e2026a6802b3</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/b99b3996-25a3-42e5-ac87-e2026a6802b3"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/b99b3996-25a3-42e5-ac87-e2026a6802b3"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/35e544f9-1ecf-465b-9edf-296dbca5660c</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/35e544f9-1ecf-465b-9edf-296dbca5660c"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/35e544f9-1ecf-465b-9edf-296dbca5660c"/>
     </url>
 
-<url>
+    <url>
+        <loc>https://dailyjavaquiz.github.io/b585d087-3985-4db6-8cde-adc8bb079196</loc>
+        <lastmod>2025-02-08</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/b585d087-3985-4db6-8cde-adc8bb079196"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/b585d087-3985-4db6-8cde-adc8bb079196"/>
+    </url>
+
+    <url>
         <loc>https://dailyjavaquiz.github.io/85fde859-39ff-4c73-bc1a-88a9f6b85653</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/85fde859-39ff-4c73-bc1a-88a9f6b85653"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/85fde859-39ff-4c73-bc1a-88a9f6b85653"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/29e4abd2-e47c-4edf-954a-2acda5d7b222</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/29e4abd2-e47c-4edf-954a-2acda5d7b222"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/29e4abd2-e47c-4edf-954a-2acda5d7b222"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/1c185a77-9787-4972-8f3e-7f018db9c16d</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/1c185a77-9787-4972-8f3e-7f018db9c16d"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/1c185a77-9787-4972-8f3e-7f018db9c16d"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/099bfa80-b017-4c38-802c-6eed2e856319</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/099bfa80-b017-4c38-802c-6eed2e856319"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/099bfa80-b017-4c38-802c-6eed2e856319"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/3aa970ee-97b1-43a8-ae07-2f5aa1f15a35</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/3aa970ee-97b1-43a8-ae07-2f5aa1f15a35"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/3aa970ee-97b1-43a8-ae07-2f5aa1f15a35"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/61c18590-53d1-4a01-8f48-15392f3c9bbe</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/61c18590-53d1-4a01-8f48-15392f3c9bbe"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/61c18590-53d1-4a01-8f48-15392f3c9bbe"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/770fcb44-2bbf-4f02-b23a-c06c6c9e0704</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/770fcb44-2bbf-4f02-b23a-c06c6c9e0704"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/770fcb44-2bbf-4f02-b23a-c06c6c9e0704"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/dde70c0d-4745-4dac-8673-75978a00a2da</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/dde70c0d-4745-4dac-8673-75978a00a2da"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/dde70c0d-4745-4dac-8673-75978a00a2da"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/6f7d1ad3-1c6d-4e0b-927e-afea6ca2443d</loc>
         <lastmod>2025-02-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/6f7d1ad3-1c6d-4e0b-927e-afea6ca2443d"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/6f7d1ad3-1c6d-4e0b-927e-afea6ca2443d"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/1eed891a-114a-471e-beb5-999270a99471</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/1eed891a-114a-471e-beb5-999270a99471"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/1eed891a-114a-471e-beb5-999270a99471"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/5a7e1899-0f35-40c3-9e68-529a2ab57729</loc>
         <lastmod>2025-02-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/5a7e1899-0f35-40c3-9e68-529a2ab57729"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/5a7e1899-0f35-40c3-9e68-529a2ab57729"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/b3b1398c-cd84-45cf-8692-be36e80cac1e</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/b3b1398c-cd84-45cf-8692-be36e80cac1e"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/b3b1398c-cd84-45cf-8692-be36e80cac1e"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/8d518377-e36a-49e0-a5b4-65fe4403c00e</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/8d518377-e36a-49e0-a5b4-65fe4403c00e"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/8d518377-e36a-49e0-a5b4-65fe4403c00e"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/7174a133-4ffe-4010-bfb2-a5b5e88edb5e</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/7174a133-4ffe-4010-bfb2-a5b5e88edb5e"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/7174a133-4ffe-4010-bfb2-a5b5e88edb5e"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/b64744b4-50cb-4c3a-b70f-a560ef58b7e6</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/b64744b4-50cb-4c3a-b70f-a560ef58b7e6"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/b64744b4-50cb-4c3a-b70f-a560ef58b7e6"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/ef877eef-68d5-4001-ae9d-e869c73702f8</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/ef877eef-68d5-4001-ae9d-e869c73702f8"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/ef877eef-68d5-4001-ae9d-e869c73702f8"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/5db01955-e4d6-41c0-ac76-ac12a3871998</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/5db01955-e4d6-41c0-ac76-ac12a3871998"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/5db01955-e4d6-41c0-ac76-ac12a3871998"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/fc661682-6922-4124-a64a-b88bc8a72140</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/fc661682-6922-4124-a64a-b88bc8a72140"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/fc661682-6922-4124-a64a-b88bc8a72140"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/111eeb6b-601b-4169-af74-c1f30e8ae5e9</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/111eeb6b-601b-4169-af74-c1f30e8ae5e9"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/111eeb6b-601b-4169-af74-c1f30e8ae5e9"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/7e0ae427-f533-4ce2-9e28-b12c497cd056</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/7e0ae427-f533-4ce2-9e28-b12c497cd056"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/7e0ae427-f533-4ce2-9e28-b12c497cd056"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/0c62a026-10fb-4430-930b-9d9e066c317a</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/0c62a026-10fb-4430-930b-9d9e066c317a"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/0c62a026-10fb-4430-930b-9d9e066c317a"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/ad3c6a7d-3e45-4757-8520-3f25f883e2ea</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/ad3c6a7d-3e45-4757-8520-3f25f883e2ea"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/ad3c6a7d-3e45-4757-8520-3f25f883e2ea"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/af656b6a-bc46-4f9c-9d37-3e64b476f57b</loc>
         <lastmod>2025-02-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/af656b6a-bc46-4f9c-9d37-3e64b476f57b"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/af656b6a-bc46-4f9c-9d37-3e64b476f57b"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/09fc14ed-8068-4b6d-9191-c03de6d99c8c</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/09fc14ed-8068-4b6d-9191-c03de6d99c8c"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/09fc14ed-8068-4b6d-9191-c03de6d99c8c"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/f3396e77-d78a-4a86-8599-65ba1c668b46</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/f3396e77-d78a-4a86-8599-65ba1c668b46"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/f3396e77-d78a-4a86-8599-65ba1c668b46"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/bb88099f-3ab3-4de2-a883-08318b538932</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/bb88099f-3ab3-4de2-a883-08318b538932"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/bb88099f-3ab3-4de2-a883-08318b538932"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/f4e9750a-5241-42fb-b49c-30e245535ba0</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/f4e9750a-5241-42fb-b49c-30e245535ba0"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/f4e9750a-5241-42fb-b49c-30e245535ba0"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/cfb2f9f6-877e-41af-a056-2ada8e4edc9f</loc>
         <lastmod>2025-02-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/cfb2f9f6-877e-41af-a056-2ada8e4edc9f"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/cfb2f9f6-877e-41af-a056-2ada8e4edc9f"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/88a86140-461f-4b4d-a732-db8704b6d6f9</loc>
         <lastmod>2025-02-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/88a86140-461f-4b4d-a732-db8704b6d6f9"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/88a86140-461f-4b4d-a732-db8704b6d6f9"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/e069a6f3-9584-40cd-9fa2-307d80f56ffa</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/e069a6f3-9584-40cd-9fa2-307d80f56ffa"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/e069a6f3-9584-40cd-9fa2-307d80f56ffa"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/4cdb6030-281b-4ca4-91e9-22983082646f</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/4cdb6030-281b-4ca4-91e9-22983082646f"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/4cdb6030-281b-4ca4-91e9-22983082646f"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/883c44ae-8d75-45d9-943c-6f02761ce387</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/883c44ae-8d75-45d9-943c-6f02761ce387"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/883c44ae-8d75-45d9-943c-6f02761ce387"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/d1850d94-50ee-4752-9283-1e081697745e</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/d1850d94-50ee-4752-9283-1e081697745e"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/d1850d94-50ee-4752-9283-1e081697745e"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/a4bb5407-2f85-46f9-81c7-2ba620235d60</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/a4bb5407-2f85-46f9-81c7-2ba620235d60"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/a4bb5407-2f85-46f9-81c7-2ba620235d60"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/1bb3956a-c679-465a-af22-310443fe1dd4</loc>
         <lastmod>2025-02-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/1bb3956a-c679-465a-af22-310443fe1dd4"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/1bb3956a-c679-465a-af22-310443fe1dd4"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/febe7cf2-66e3-45f5-bf72-1804b9cd7d4d</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/febe7cf2-66e3-45f5-bf72-1804b9cd7d4d"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/febe7cf2-66e3-45f5-bf72-1804b9cd7d4d"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/c9b9411f-5259-4b84-81a3-7499a30bfea0</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/c9b9411f-5259-4b84-81a3-7499a30bfea0"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/c9b9411f-5259-4b84-81a3-7499a30bfea0"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/cc432405-96af-46c2-ae85-6b16b557e034</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/cc432405-96af-46c2-ae85-6b16b557e034"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/cc432405-96af-46c2-ae85-6b16b557e034"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/ab12e924-1c0a-43ed-aa2d-288d6ec4a5dd</loc>
         <lastmod>2025-02-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/ab12e924-1c0a-43ed-aa2d-288d6ec4a5dd"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/ab12e924-1c0a-43ed-aa2d-288d6ec4a5dd"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/4a38e35d-f661-44a0-93f9-c06292c5419d</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/4a38e35d-f661-44a0-93f9-c06292c5419d"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/4a38e35d-f661-44a0-93f9-c06292c5419d"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/b3804413-b39f-4ab6-b14e-170eede0d969</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/b3804413-b39f-4ab6-b14e-170eede0d969"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/b3804413-b39f-4ab6-b14e-170eede0d969"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/eea3306e-c951-43c4-a478-6b8835c34e5a</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/eea3306e-c951-43c4-a478-6b8835c34e5a"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/eea3306e-c951-43c4-a478-6b8835c34e5a"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/a8819d68-8a07-4541-9c4d-52bf83a5cf2e</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/a8819d68-8a07-4541-9c4d-52bf83a5cf2e"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/a8819d68-8a07-4541-9c4d-52bf83a5cf2e"/>
     </url>
 
-<url>
-        <loc>https://dailyjavaquiz.github.io/ca5cd598-0c2d-4852-98e4-a5d9f5067ca3</loc>
-        <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/d597f607-3ae2-4dd0-b4f7-341b652e71f7</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/d597f607-3ae2-4dd0-b4f7-341b652e71f7"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/d597f607-3ae2-4dd0-b4f7-341b652e71f7"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/b5d04bf6-ed9b-4571-ae2f-128e55f7eaf7</loc>
         <lastmod>2025-02-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/b5d04bf6-ed9b-4571-ae2f-128e55f7eaf7"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/b5d04bf6-ed9b-4571-ae2f-128e55f7eaf7"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/d0a77781-a6ad-4d9e-9d2c-f11a81cfa80f</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/d0a77781-a6ad-4d9e-9d2c-f11a81cfa80f"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/d0a77781-a6ad-4d9e-9d2c-f11a81cfa80f"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/f5933649-5c21-43f2-9d4b-f726b42c57fa</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/f5933649-5c21-43f2-9d4b-f726b42c57fa"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/f5933649-5c21-43f2-9d4b-f726b42c57fa"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/b3a122af-cbc3-4247-9c26-5f941e0a9488</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/b3a122af-cbc3-4247-9c26-5f941e0a9488"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/b3a122af-cbc3-4247-9c26-5f941e0a9488"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/bfe9ceb6-e844-4ab7-9fd5-50e755e1f3ff</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/bfe9ceb6-e844-4ab7-9fd5-50e755e1f3ff"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/bfe9ceb6-e844-4ab7-9fd5-50e755e1f3ff"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/ba65563e-f331-4372-a2c9-4e9df879aa37</loc>
         <lastmod>2025-02-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/ba65563e-f331-4372-a2c9-4e9df879aa37"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/ba65563e-f331-4372-a2c9-4e9df879aa37"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/1a189d08-218f-4a7c-906d-93bc9f39f7e6</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/1a189d08-218f-4a7c-906d-93bc9f39f7e6"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/1a189d08-218f-4a7c-906d-93bc9f39f7e6"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/c5238f41-4af2-4a14-a179-91125f061822</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/c5238f41-4af2-4a14-a179-91125f061822"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/c5238f41-4af2-4a14-a179-91125f061822"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/7bb84e49-c8e1-43d9-a774-0c932bfa70bc</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/7bb84e49-c8e1-43d9-a774-0c932bfa70bc"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/7bb84e49-c8e1-43d9-a774-0c932bfa70bc"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/0ec5ac27-ff9a-4eed-bb80-ad547348abdf</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/0ec5ac27-ff9a-4eed-bb80-ad547348abdf"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/0ec5ac27-ff9a-4eed-bb80-ad547348abdf"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/19333311-1f57-4870-baca-411024d674b0</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/19333311-1f57-4870-baca-411024d674b0"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/19333311-1f57-4870-baca-411024d674b0"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/5d5f0956-40e1-419d-9ea3-b4a51e67bb6a</loc>
         <lastmod>2025-02-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/5d5f0956-40e1-419d-9ea3-b4a51e67bb6a"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/5d5f0956-40e1-419d-9ea3-b4a51e67bb6a"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/25a292c2-3cde-46bd-9a42-f5e375e458b8</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/25a292c2-3cde-46bd-9a42-f5e375e458b8"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/25a292c2-3cde-46bd-9a42-f5e375e458b8"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/bd6cf369-c6e1-493e-80cd-a47212d78d4c</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/bd6cf369-c6e1-493e-80cd-a47212d78d4c"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/bd6cf369-c6e1-493e-80cd-a47212d78d4c"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/16d4e647-e9d8-48f0-b53a-b611c4494f10</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/16d4e647-e9d8-48f0-b53a-b611c4494f10"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/16d4e647-e9d8-48f0-b53a-b611c4494f10"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/cc6a2d37-5153-450f-88d0-c3b318769e1a</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/cc6a2d37-5153-450f-88d0-c3b318769e1a"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/cc6a2d37-5153-450f-88d0-c3b318769e1a"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/a7c965ec-1ae3-4f42-9b66-770a41878c91</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/a7c965ec-1ae3-4f42-9b66-770a41878c91"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/a7c965ec-1ae3-4f42-9b66-770a41878c91"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/6b2696ae-7dfc-40f7-9c4e-d116575482bc</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/6b2696ae-7dfc-40f7-9c4e-d116575482bc"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/6b2696ae-7dfc-40f7-9c4e-d116575482bc"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/795b1366-bdc0-476a-bc95-4b6603731028</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/795b1366-bdc0-476a-bc95-4b6603731028"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/795b1366-bdc0-476a-bc95-4b6603731028"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/7389265b-104a-4868-bc35-30b7bbfeea27</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/7389265b-104a-4868-bc35-30b7bbfeea27"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/7389265b-104a-4868-bc35-30b7bbfeea27"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/1c1da523-0039-4d84-947f-d746d6ada4b0</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/1c1da523-0039-4d84-947f-d746d6ada4b0"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/1c1da523-0039-4d84-947f-d746d6ada4b0"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/4bebfdac-b4af-435f-b975-f5bbbf2e4211</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/4bebfdac-b4af-435f-b975-f5bbbf2e4211"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/4bebfdac-b4af-435f-b975-f5bbbf2e4211"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/86e7200e-fffc-4e1e-9659-7a83fdc7d845</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/86e7200e-fffc-4e1e-9659-7a83fdc7d845"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/86e7200e-fffc-4e1e-9659-7a83fdc7d845"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/6dcb2245-680e-4bf1-88af-6d86ce47f223</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/6dcb2245-680e-4bf1-88af-6d86ce47f223"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/6dcb2245-680e-4bf1-88af-6d86ce47f223"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/98724ca6-1684-4ffd-ad1a-4d091358f8e2</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/98724ca6-1684-4ffd-ad1a-4d091358f8e2"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/98724ca6-1684-4ffd-ad1a-4d091358f8e2"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/8a0e09ff-44df-4491-a63c-679808d114e9</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/8a0e09ff-44df-4491-a63c-679808d114e9"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/8a0e09ff-44df-4491-a63c-679808d114e9"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/0472d89f-fc8c-4607-a859-11737653554f</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/0472d89f-fc8c-4607-a859-11737653554f"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/0472d89f-fc8c-4607-a859-11737653554f"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/23086823-c959-4217-804e-7076240415f7</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/23086823-c959-4217-804e-7076240415f7"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/23086823-c959-4217-804e-7076240415f7"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/9e988a13-9728-476c-b7ba-b44a84a697db</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/9e988a13-9728-476c-b7ba-b44a84a697db"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/9e988a13-9728-476c-b7ba-b44a84a697db"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/5f3c81c1-9ad3-4711-bfc9-d543d21dbf90</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/5f3c81c1-9ad3-4711-bfc9-d543d21dbf90"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/5f3c81c1-9ad3-4711-bfc9-d543d21dbf90"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/bed1f9c7-7887-421f-9a75-a6d6308cdf47</loc>
         <lastmod>2025-02-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/bed1f9c7-7887-421f-9a75-a6d6308cdf47"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/bed1f9c7-7887-421f-9a75-a6d6308cdf47"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/1d31f7ce-18ee-485e-a86c-a085df608a83</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/1d31f7ce-18ee-485e-a86c-a085df608a83"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/1d31f7ce-18ee-485e-a86c-a085df608a83"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/21c82b71-8e98-497a-8f9b-576152322394</loc>
         <lastmod>2025-02-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/21c82b71-8e98-497a-8f9b-576152322394"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/21c82b71-8e98-497a-8f9b-576152322394"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/b45afff0-a705-4de7-892b-c02c77fafbcf</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/b45afff0-a705-4de7-892b-c02c77fafbcf"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/b45afff0-a705-4de7-892b-c02c77fafbcf"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/8a64921b-fce8-42f5-a66d-892e8791c35d</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/8a64921b-fce8-42f5-a66d-892e8791c35d"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/8a64921b-fce8-42f5-a66d-892e8791c35d"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/dfbf86b2-60f3-4fa0-8255-623a0803d030</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/dfbf86b2-60f3-4fa0-8255-623a0803d030"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/dfbf86b2-60f3-4fa0-8255-623a0803d030"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/9371f6ab-e10a-44f3-977c-c5412ff0bd29</loc>
         <lastmod>2025-02-03</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/9371f6ab-e10a-44f3-977c-c5412ff0bd29"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/9371f6ab-e10a-44f3-977c-c5412ff0bd29"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/f18f7efc-8335-463a-8d1a-bfbc60a88884</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/f18f7efc-8335-463a-8d1a-bfbc60a88884"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/f18f7efc-8335-463a-8d1a-bfbc60a88884"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/009ed7a1-a18b-4eba-9896-c1ec679f4839</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/009ed7a1-a18b-4eba-9896-c1ec679f4839"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/009ed7a1-a18b-4eba-9896-c1ec679f4839"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/f64e27f3-d8bb-4b32-a917-cffbd1e3a1ff</loc>
         <lastmod>2025-02-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/f64e27f3-d8bb-4b32-a917-cffbd1e3a1ff"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/f64e27f3-d8bb-4b32-a917-cffbd1e3a1ff"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/74fa5408-2c7a-4bd2-a48d-29531059fa9d</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/74fa5408-2c7a-4bd2-a48d-29531059fa9d"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/74fa5408-2c7a-4bd2-a48d-29531059fa9d"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/de69fbb8-8172-43fe-b1d4-5b10f0c1fa07</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/de69fbb8-8172-43fe-b1d4-5b10f0c1fa07"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/de69fbb8-8172-43fe-b1d4-5b10f0c1fa07"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/05e2472b-cf81-4688-8b35-d7eef051b36e</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/05e2472b-cf81-4688-8b35-d7eef051b36e"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/05e2472b-cf81-4688-8b35-d7eef051b36e"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/b6b9968c-16e3-4e3d-9b44-83a63b52396b</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/b6b9968c-16e3-4e3d-9b44-83a63b52396b"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/b6b9968c-16e3-4e3d-9b44-83a63b52396b"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/65856e97-5d75-49d5-8f75-ebab4319dd89</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/65856e97-5d75-49d5-8f75-ebab4319dd89"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/65856e97-5d75-49d5-8f75-ebab4319dd89"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/0098eb19-3e45-4c3f-bc16-b3b95733ca32</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/0098eb19-3e45-4c3f-bc16-b3b95733ca32"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/0098eb19-3e45-4c3f-bc16-b3b95733ca32"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/8e642eed-3c71-4054-b758-45a3f03791f3</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/8e642eed-3c71-4054-b758-45a3f03791f3"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/8e642eed-3c71-4054-b758-45a3f03791f3"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/878b3913-8d50-4707-80da-8ab8f1d29630</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/878b3913-8d50-4707-80da-8ab8f1d29630"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/878b3913-8d50-4707-80da-8ab8f1d29630"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/1aae4166-dce1-4ea9-8210-4098611e4355</loc>
         <lastmod>2025-02-07</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/1aae4166-dce1-4ea9-8210-4098611e4355"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/1aae4166-dce1-4ea9-8210-4098611e4355"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/1853a5bf-685b-43d7-a8ae-07ee9e80f7a7</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/1853a5bf-685b-43d7-a8ae-07ee9e80f7a7"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/1853a5bf-685b-43d7-a8ae-07ee9e80f7a7"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/489e0076-d0fa-4a3a-8d62-d33dfd7fee6e</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/489e0076-d0fa-4a3a-8d62-d33dfd7fee6e"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/489e0076-d0fa-4a3a-8d62-d33dfd7fee6e"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/5ee963cd-2791-45fe-a9f9-68459685beb7</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/5ee963cd-2791-45fe-a9f9-68459685beb7"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/5ee963cd-2791-45fe-a9f9-68459685beb7"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/0806a2f9-a8b2-4dfb-bc7c-e340ce6e6b2e</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/0806a2f9-a8b2-4dfb-bc7c-e340ce6e6b2e"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/0806a2f9-a8b2-4dfb-bc7c-e340ce6e6b2e"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/61bfc4b8-ca51-45f2-beba-6eb7a54ecdd8</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/61bfc4b8-ca51-45f2-beba-6eb7a54ecdd8"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/61bfc4b8-ca51-45f2-beba-6eb7a54ecdd8"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/a7e58553-4a59-4604-95cb-68303b6a1e96</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/a7e58553-4a59-4604-95cb-68303b6a1e96"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/a7e58553-4a59-4604-95cb-68303b6a1e96"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/26f107c0-8e51-4cc8-a92a-77d7e800b80e</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/26f107c0-8e51-4cc8-a92a-77d7e800b80e"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/26f107c0-8e51-4cc8-a92a-77d7e800b80e"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/07fb7f6e-892a-45af-b989-59d1f76613d8</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/07fb7f6e-892a-45af-b989-59d1f76613d8"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/07fb7f6e-892a-45af-b989-59d1f76613d8"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/ed405883-c1c5-4a16-af77-388fe63b7615</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/ed405883-c1c5-4a16-af77-388fe63b7615"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/ed405883-c1c5-4a16-af77-388fe63b7615"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/096687cf-c4f7-4099-bf44-a47dab33f582</loc>
         <lastmod>2025-01-31</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/096687cf-c4f7-4099-bf44-a47dab33f582"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/096687cf-c4f7-4099-bf44-a47dab33f582"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/e52a2b0c-d3c6-4862-a526-e6d449ace64b</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/e52a2b0c-d3c6-4862-a526-e6d449ace64b"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/e52a2b0c-d3c6-4862-a526-e6d449ace64b"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/9373fd29-8edb-4368-bc1b-d264453e67c2</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/9373fd29-8edb-4368-bc1b-d264453e67c2"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/9373fd29-8edb-4368-bc1b-d264453e67c2"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/ba7e2974-7d83-41e7-8ea4-13ef3e803bb5</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/ba7e2974-7d83-41e7-8ea4-13ef3e803bb5"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/ba7e2974-7d83-41e7-8ea4-13ef3e803bb5"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/e8cbbf5f-3c45-44b7-a7a9-76e892cd1267</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/e8cbbf5f-3c45-44b7-a7a9-76e892cd1267"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/e8cbbf5f-3c45-44b7-a7a9-76e892cd1267"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/6e51eadc-c360-4260-9aec-e9a9de7b2d8d</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/6e51eadc-c360-4260-9aec-e9a9de7b2d8d"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/6e51eadc-c360-4260-9aec-e9a9de7b2d8d"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/16cb19a0-81df-463e-92ac-e7e443d0be11</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/16cb19a0-81df-463e-92ac-e7e443d0be11"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/16cb19a0-81df-463e-92ac-e7e443d0be11"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/9f6b2e7c-8cc2-4321-ae4a-fe048bc077d7</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/9f6b2e7c-8cc2-4321-ae4a-fe048bc077d7"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/9f6b2e7c-8cc2-4321-ae4a-fe048bc077d7"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/3070f536-8e0d-4010-9c50-81cf7fd681e1</loc>
         <lastmod>2025-02-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/3070f536-8e0d-4010-9c50-81cf7fd681e1"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/3070f536-8e0d-4010-9c50-81cf7fd681e1"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/f8a5af21-d511-4c4a-815c-8abf34621a67</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/f8a5af21-d511-4c4a-815c-8abf34621a67"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/f8a5af21-d511-4c4a-815c-8abf34621a67"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/8fe9ecae-a900-40fd-83b7-11c0f525383e</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/8fe9ecae-a900-40fd-83b7-11c0f525383e"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/8fe9ecae-a900-40fd-83b7-11c0f525383e"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/1b0ffe4a-253c-454e-ab22-03a254784a7c</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/1b0ffe4a-253c-454e-ab22-03a254784a7c"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/1b0ffe4a-253c-454e-ab22-03a254784a7c"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/54ca6cb0-c034-42a7-a2c0-e82e1a45a072</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/54ca6cb0-c034-42a7-a2c0-e82e1a45a072"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/54ca6cb0-c034-42a7-a2c0-e82e1a45a072"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/ad5fd89d-2654-4a34-9b45-d6290a0869d6</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/ad5fd89d-2654-4a34-9b45-d6290a0869d6"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/ad5fd89d-2654-4a34-9b45-d6290a0869d6"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/3b70554f-15c1-4b07-802e-811c6c7b93ba</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/3b70554f-15c1-4b07-802e-811c6c7b93ba"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/3b70554f-15c1-4b07-802e-811c6c7b93ba"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/c37472bc-3bf6-405c-8e09-b08b2c5b7773</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/c37472bc-3bf6-405c-8e09-b08b2c5b7773"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/c37472bc-3bf6-405c-8e09-b08b2c5b7773"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/6d4e2b81-0cb1-4a50-906b-234c0c1670c0</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/6d4e2b81-0cb1-4a50-906b-234c0c1670c0"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/6d4e2b81-0cb1-4a50-906b-234c0c1670c0"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/f1e77127-26c8-4034-bcd1-43401c0fd543</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/f1e77127-26c8-4034-bcd1-43401c0fd543"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/f1e77127-26c8-4034-bcd1-43401c0fd543"/>
     </url>
 
-<url>
+    <url>
         <loc>https://dailyjavaquiz.github.io/733dcf66-a9f6-4f34-baff-fdb44254e794</loc>
         <lastmod>2025-02-06</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dailyjavaquiz.github.io/733dcf66-a9f6-4f34-baff-fdb44254e794"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://dailyjavaquiz.github.io/733dcf66-a9f6-4f34-baff-fdb44254e794"/>
     </url>
 
 </urlset>
